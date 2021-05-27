@@ -24,8 +24,14 @@
         tools:layout="@layout/fragment_slideshow" />
 
     <fragment
-        android:id="@+id/Title1"
+        android:id="@+id/nav_Title1"
         android:name="com.guide.gameguide.Title1"
         android:label="Title1"
         tools:layout="@layout/fragment_title1" />
+
+    <fragment
+        android:id="@+id/nav_Vehicles"
+        android:name="com.guide.gameguide.ui.vehicles.VehiclesList"
+        android:label="Vehicles"
+        tools:layout="@layout/fragment_vehicles_list" />
 </navigation>

@@ -1,6 +1,9 @@
 package com.guide.gameguide;
 
 import android.content.Context;
+import android.content.ContextWrapper;
+import android.graphics.drawable.Drawable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,10 +12,12 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.io.File;
+
 public class MapsAdapter extends RecyclerView.Adapter<MapsAdapter.MapsViewHolder> {
     Context context;
     int images[];
-    public MapsAdapter(Context ct , int img[]){
+    public MapsAdapter(Context ct ,int img[]){
               context = ct;
               images = img;
     }
@@ -28,6 +33,7 @@ public class MapsAdapter extends RecyclerView.Adapter<MapsAdapter.MapsViewHolder
     @Override
     public void onBindViewHolder(@NonNull MapsViewHolder holder, int position) {
         holder.myImages.setImageResource(images[position]);
+
     }
 
     @Override

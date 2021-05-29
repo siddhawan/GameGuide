@@ -25,8 +25,8 @@
 
     <fragment
         android:id="@+id/nav_Title1"
-        android:name="com.guide.gameguide.Title1"
-        android:label="Title1"
+        android:name="com.guide.gameguide.Maps"
+        android:label="Maps"
         tools:layout="@layout/fragment_title1" />
 
     <fragment

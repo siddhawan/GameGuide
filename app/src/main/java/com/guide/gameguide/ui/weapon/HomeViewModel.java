@@ -1,4 +1,4 @@
-package com.guide.gameguide.ui.home;
+package com.guide.gameguide.ui.weapon;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

@@ -44,13 +44,16 @@ public class WeaponList extends Fragment {
         CSVFile csvFile = new CSVFile(inputStream);
         List scoreList= new ArrayList();
         scoreList = csvFile.read();
-        System.out.println(scoreList.get(0));
-        for(Object sa : scoreList){
+        //
+        for(Object sa : scoreList) {
+            //String[] Strval = sa.t;
             //Log.e("onCreateView: ",System.out.println(x)  );
             //System.out.println(Arrays.toString(sa));
+
+            String[] a = (String[]) sa;
+            System.out.println(a[1]);
+
         }
-
-
 
         homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override

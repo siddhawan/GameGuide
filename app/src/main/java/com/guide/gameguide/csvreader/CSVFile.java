@@ -27,6 +27,7 @@ public class CSVFile {
 
 
                 resultList.add(row);
+
                 //System.out.println(Arrays.toString(resultList.get(0)));
             }
         }
@@ -36,6 +37,8 @@ public class CSVFile {
         finally {
             try {
                 inputStream.close();
+
+
             }
             catch (IOException e) {
                 throw new RuntimeException("Error while closing input stream: "+e);

@@ -24,7 +24,7 @@ public class Maps extends Fragment {
     public static Maps newInstance() {
         return new Maps();
     }
-    int images[] = {R.drawable.map1 , R.drawable.map2 ,getResId("a", R.drawable.class)};
+    int images[] = {R.drawable.map1 , R.drawable.map2 ,getResId("a20001", R.drawable.class)};
 
 
 

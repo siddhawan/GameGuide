@@ -34,4 +34,9 @@
         android:name="com.guide.gameguide.ui.vehicles.VehiclesList"
         android:label="Vehicles"
         tools:layout="@layout/fragment_vehicles_list" />
+    <fragment
+        android:id="@+id/nav_Consumables"
+        android:name="com.guide.gameguide.ui.consumables.ConsumablesItems"
+        android:label="Consumables"
+        tools:layout="@layout/fragment_consumables_items" />
 </navigation>

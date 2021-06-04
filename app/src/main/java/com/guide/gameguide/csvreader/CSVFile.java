@@ -41,6 +41,8 @@ public class CSVFile {
                 throw new RuntimeException("Error while closing input stream: "+e);
             }
         }
+        String [] a  = (String[]) resultList.get(0);
+        System.out.println(a);
         return resultList;
     }
 }

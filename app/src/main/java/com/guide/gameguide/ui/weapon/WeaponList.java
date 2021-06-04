@@ -42,13 +42,12 @@ public class WeaponList extends Fragment {
         final TextView textView = root.findViewById(R.id.text_home);
         InputStream inputStream = getResources().openRawResource(R.raw.demo1);
         CSVFile csvFile = new CSVFile(inputStream);
-        List scoreList= new ArrayList();
-        scoreList = csvFile.read();
-        System.out.println(scoreList.get(0));
-        for(Object sa : scoreList){
-            //Log.e("onCreateView: ",System.out.println(x)  );
-            //System.out.println(Arrays.toString(sa));
-        }
+        List scoreList = csvFile.read();
+
+        for(Object a : scoreList)
+
+
+
 
 
 

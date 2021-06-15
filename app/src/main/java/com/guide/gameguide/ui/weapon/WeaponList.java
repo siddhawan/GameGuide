@@ -44,7 +44,9 @@ public class WeaponList extends Fragment {
         CSVFile csvFile = new CSVFile(inputStream);
         List scoreList = csvFile.read();
 
-        for(Object a : scoreList)
+        for(Object a : scoreList){
+
+        }
 
 
 

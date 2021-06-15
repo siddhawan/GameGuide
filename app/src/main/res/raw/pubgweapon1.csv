@@ -1,0 +1,51 @@
+me01,Pan,N.A.,80,3000,N.A.,N.A.,N.A.,N.A.,N.A.,N.A.,N.A.,Ground Loot
+me02,Crowbar,N.A.,60,3000,N.A.,N.A.,N.A.,N.A.,N.A.,N.A.,N.A.,Ground Loot
+me03,Machete,N.A.,60,3000,N.A.,N.A.,N.A.,N.A.,N.A.,N.A.,N.A.,Ground Loot
+me04,Sickle,N.A.,60,3000,N.A.,N.A.,N.A.,N.A.,N.A.,N.A.,N.A.,Ground Loot
+cr01,Crossbow,Bolt,105,8000,2,1,1,Single,3.540s,2.480s,160m/s,Ground Loot
+pt01,P92,9mm,35,7000,4,15,20,Single,2.000s,1.700s,380m/s,Ground Loot
+pt02,P1911,.45 ACP,41,6000,4,7,12,Single,2.100s,1.800s,250m/s,Ground Loot
+pt03,R1895,7.62mm,55,8000,1,7,7,Single,6.250s,1.000s,330m/s,Ground Loot
+pt04,P18C,9mm,23,7000,4,17,25,"Single, Auto",2.000s,1.700s,375m/s,Ground Loot
+pt05,R45,.45 ACP,55,8000,2,6,6,Single,3.200s,3.200s,330m/s,Ground Loot
+pt06,Sawed-off,12 Gauge,160,8000,1,2,2,Single,2.000s,2.000s,330m/s,Ground Loot
+pt07,Flare Gun,Flare,0,0,0,1,1,single,3.5s,3.5s,0m/s,Ground Loot
+pt08,Skorpion,9mm,22,5000,5,20,40,"Single, Auto",3.100s,2.500s,350m/s,Ground Loot
+pt09,Desert Eagle,.45 ACP,62,10000,3,7,10,Single,2.100s,1.800s,450m/s,Ground Loot
+sh01,S1897,12 Gauge,26,5000,2,5,5,Single,4.000s,0.715s,360m/s,Ground Loot
+sh02,S686,12 Gauge,26,5000,2,2,2,Single,2.400s,2.400s,370m/s,Ground Loot
+sh03,S12K,12 Gauge,24,5000,3,5,8,Single,3.000s,2.400s,350m/s,Ground Loot
+sh04,DBS,12 Gauge,26,6000,1,14,14,Single,Nil,Nil,350m/s,Ground Loot
+sh05,M1014,12 Gauge,NA,NA,NA,NA,NA,NA,NA,NA,NA,Ground Loot
+sm01,UZI,9mm,26,5000,3,25,35,"Single, Auto",3.100s,2.500s,350m/s,Ground Loot
+sm02,UMP45,.45 ACP,41,7000,4,25,35,"Single, Auto, Burst",3.100s,2.550s,360m/s,Ground Loot
+sm03,Vector,9mm,31,7000,4,19,33,"Single, Auto, Burst",2.200s,2.100s,350m/s,Ground Loot
+sm04,Thompson SMG,.45 ACP,41,7000,3,30,50,"Single, Auto",3.450s,2.850s,280m/s,Ground Loot
+sm05,PP-Bizon,9mm,35,7000,2,53,53,Single. Auto,2.500s,2.500s,408m/s,Ground Loot
+sm06,MP5K,9mm,33,7000,5,30,40,"Single, Auto, Burst",4.580s,2.750s,400m/s,Ground Loot
+sm07,P90,9mm,26,7000,3,50,50,"Single, Auto",Nil,Nil,400m/s,Ground Loot
+ar01,M16A4,5.56mm,43,8000,4,30,40,"Single, Burst",2.2s,1.9s,900m/s,Ground Loot
+ar02,M416,5.56mm,41,3500,5,30,40,"Single, Auto",2.1s,1.9s,880m/s,Ground Loot
+ar03,SCAR-L,5.56mm,41,9000,4,30,40,"Single, Auto ",2.200s,1.900s,870m/s,Ground Loot
+ar04,AUG A3,5.56mm,41,9000,4,30,40,"Single, Auto",3.666s,3.000s,940m/s,Air Drop Loot
+ar05,QBZ,5.56mm,41,9000,4,30,40,"Single, Auto",2.200s,1.900s,870m/s,Ground Loot
+ar06,G36C,5.56mm,41,10000,4,30,40,"Single, Auto",2.100s,1.900s,870m/s,Ground Loot
+ar07,FAMAS,5.56mm,Nil,Nil,3,25,35,"Single, Auto",4.500s,2.800s,Nil,Ground Loot
+ar08,Mk47,7.62mm,49,10000,5,20,30,"Single, Burst",3.370s,2.780s,780m/s,Ground Loot
+ar09,AKM,7.62mm,47,10000,3,30,40,"Single, Burst",2.900s,2.250s,715m/s,Ground Loot
+ar10,M762,7.62mm,46,10000,4,30,40,"Single, Burst, Auto",2.200s,1.900s,715m/s,Ground Loot
+ar11,GROZA,7.62mm,47,10000,3,30,40,"Single, Auto",3.000s,2.250s,715m/s,Air Drop Loot
+dm01,VSS,9mm,41,20000,2,10,20,"Single, Auto",2.900s,2.100s,330m/s,Ground Loot
+dm02,Mini14,5.56mm,46,10000,3,20,30,Single,3.600s,2.700s,990m/s,Ground Loot
+dm03,QBU,5.56mm,48,10000,3,10,20,Single,3.000s,Nil,945m/s,Ground Loot
+dm04,Mk12,5.56mm,45,10000,4,20,30,Single,3.683s,2.783s,900m/s,Ground Loot
+dm05,SKS,7.62mm,53,20000,5,10,20,Single,4.550s,3.100s,800m/s,Ground Loot
+dm06,SLR,7.62mm,56,20000,4,10,20,Single,3.683s,2.783s,840m/s,Ground Loot
+dm07,Mk14,7.62mm,60,20000,4,10,20,"Single, Auto",3.683s,2.783s,853m/s,Air Drop Loot
+lm01,DP-28,7.62mm,51,10000,1,47,47,Auto,5.500s,5.500s,715m/s,Ground Loot
+lm02,M249,5.56mm,45,10000,2,75,150,Auto,8.200s,7.100s,915m/s,Air Drop Loot
+ba01,Win94,.45 ACP,66,16000,1,6,8,Single,Nil,Nil,760m/s,Ground Loot
+ba02,Mosin Nagant,7.62mm,79,16000,3,5,5,Single,Nil,Nil,760m/s,Ground Loot
+ba03,Kar98K,7.62mm,79,16000,3,5,5,Single,4.000s,1.690s,760m/s,Ground Loot
+ba04,M24,7.62mm,75,20000,4,5,7,Single,4.200s,1.800s,790m/s,Ground Loot
+ba05,AWM,.300 Magnum,105,40000,4,5,8,Single,4.600s,2.750s,945m/s,Air Drop Loot

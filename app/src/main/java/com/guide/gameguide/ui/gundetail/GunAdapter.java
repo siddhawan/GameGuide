@@ -24,15 +24,15 @@ public class GunAdapter extends RecyclerView.Adapter<GunAdapter.GunViewHolder> {
         data1 = s1;
         data2 = s2;
         data3 = s3;
-        data3 = s4;
-        data3 = s5;
-        data3 = s6;
-        data3 = s7;
-        data3 = s8;
-        data3 = s9;
-        data3 = s10;
-        data3 = s11;
-        data3 = s12;
+        data4 = s4;
+        data5 = s5;
+        data6 = s6;
+        data7 = s7;
+        data8 = s8;
+        data9 = s9;
+        data10 = s10;
+        data11 = s11;
+        data12 = s12;
         images = img;
     }
 

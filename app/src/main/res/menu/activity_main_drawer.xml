@@ -29,6 +29,10 @@
             android:id="@+id/nav_Consumables"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Consumables" />
+        <item
+            android:id="@+id/nav_Gundetail"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Armory" />
 
     </group>
 </menu>

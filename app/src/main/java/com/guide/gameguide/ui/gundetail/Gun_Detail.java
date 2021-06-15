@@ -86,6 +86,7 @@ public class Gun_Detail extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        container.removeAllViews();
         View rootView = inflater.inflate(R.layout.fragment_gun__detail, container, false);
         recyclerView = (RecyclerView) rootView.findViewById(R.id.gunview);
         InputStream inputStream = getResources().openRawResource(R.raw.pubgweapon1);

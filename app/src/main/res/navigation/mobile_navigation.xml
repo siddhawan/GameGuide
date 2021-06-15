@@ -28,6 +28,11 @@
         android:name="com.guide.gameguide.Maps"
         android:label="Maps"
         tools:layout="@layout/fragment_title1" />
+    <fragment
+        android:id="@+id/nav_Gundetail"
+        android:name="com.guide.gameguide.ui.gundetail.Gun_Detail"
+        android:label="Armory"
+        tools:layout="@layout/fragment_gun__detail" />
 
     <fragment
         android:id="@+id/nav_Vehicles"

@@ -59,12 +59,16 @@ public class VehiclesList extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
-    int images[] = {R.drawable.map1 , R.drawable.map2 , R.drawable.map3
+    int images[] = {R.drawable.boat , R.drawable.uazopen , R.drawable.aqua,
+            R.drawable.motor3 , R.drawable.mirado , R.drawable.scooter,
+            R.drawable.uazclosed , R.drawable.tukshai , R.drawable.darcia,
+            R.drawable.minibus , R.drawable.motor , R.drawable.pickup,
+            R.drawable.buggy
     };
-    String s1[] = {"car","truck","van"};
-    String s2[] = {"1000hp","2000hp","1500hp"};
-    String s3[] = {"100km/h","50km/h","80km/h"};
-    String s4[] = {"4","10","5"};
+    String s1[] = {"PC-117","UAZ OPEN TOP","AQUARAII","MOTERCYCLE W SIDECAR","MIRADO","SCOOTER","UAZ CLOSED TOP","TUKSHAI","DARCIA 1300","MINI BUS","MOTORCYCLE","PICKUP","BUGGY"};
+    String s2[] = {"1520hp","1820hp","N/A","1025hp","N/A","1025hp","1820hp","1000hp","1820hp","1680hp","1025hp","N/A","1540hp"};
+    String s3[] = {"90km/h","130km/h","90km/h","130km/h","152km/h","152km/h","130km/h","50km/h","139km/h","110km/h","152km/h","72km/h","100km/h"};
+    String s4[] = {"4","4","2","3","2","2","4","3","4","6","2","4","2"};
 
     RecyclerView recyclerView;
     @Override

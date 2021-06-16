@@ -59,19 +59,19 @@ public class ConsumablesItems extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
-    int images[] = {R.drawable.as01 , R.drawable.bd01 , R.drawable.ed01,R.drawable.fa01 , R.drawable.gc01 , R.drawable.mk01, R.drawable.pk01
+    int images[] = {R.drawable.adrenalinesyringe ,  R.drawable.bandage, R.drawable.drink , R.drawable.heal_firstaid , R.drawable.jerrycan, R.drawable.heal_medkit ,R.drawable.painkiller
     };
-    String s1[] = {"Adrenaline Syringe","Bandage","Energy drink","Firstaid kit","Gas Can","Medikit","Pain Killer"};
-    String s2[] = {"1000hp","2000hp","1500hp","1000hp","2000hp","1500hp","123"};
-    String s3[] = {"100km/h","50km/h","80km/h","100km/h","50km/h","80km/h","as"};
-    String s4[] = {"1000hp","2000hp","1500hp","1000hp","2000hp","1500hp","123"};
+    String s1[] = {"Adrenaline Syringe","Bandage","Energy drink","FirstAid kit","Gas Can","Med Kit","Pain Killer"};
+    String s2[] = {"5.900s","4.000s","4.000s","5.900s","7.000s","7.900s","5.900s"};
+    String s3[] = {"100HP","75HP","40HP","75HP","100HP","100HP","60HP"};
+
     RecyclerView recyclerView;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_consumables_items, container, false);
         recyclerView = (RecyclerView) rootView.findViewById(R.id.listconsumables);
-        ConsumablesAdapter consumablesAdapter = new ConsumablesAdapter(container.getContext(),s1,s2,s3,s4,images);
+        ConsumablesAdapter consumablesAdapter = new ConsumablesAdapter(container.getContext(),s1,s2,s3,images);
         recyclerView.setAdapter(consumablesAdapter);
         recyclerView.setLayoutManager( new LinearLayoutManager(getContext()));
         return  rootView;

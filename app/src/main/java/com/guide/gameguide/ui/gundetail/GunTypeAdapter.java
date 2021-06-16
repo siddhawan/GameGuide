@@ -68,19 +68,72 @@ public class GunTypeAdapter extends RecyclerView.Adapter<GunTypeAdapter.GunTypeV
             if(getLayoutPosition()==0){
                 //Do whatever you want here
                 AppCompatActivity activity = (AppCompatActivity) v.getContext();
-                Fragment myFragment = new Gun_Detail();
+                Fragment myFragment = new Gun_Detail("ar");
                 activity.getSupportFragmentManager().beginTransaction().replace(R.id.callfrag, myFragment).addToBackStack(null).commit();
 
             }else if(getLayoutPosition()==1){
                 //Do whatever you want here
-                Toast.makeText(v.getContext(), "position = " + getLayoutPosition(), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(v.getContext(), "position = " + getLayoutPosition(), Toast.LENGTH_SHORT).show();
                 AppCompatActivity activity = (AppCompatActivity) v.getContext();
-                Fragment myFragment = new Gun_Detail();
+                Fragment myFragment = new Gun_Detail("dm");
                 activity.getSupportFragmentManager().beginTransaction().replace(R.id.callfrag, myFragment).commit();
 
-            }else if(getLayoutPosition()==2){
-                Toast.makeText(v.getContext(), "position = " + getLayoutPosition(), Toast.LENGTH_SHORT).show();
             }
+            else if(getLayoutPosition()==2){
+               // Toast.makeText(v.getContext(), "position = " + getLayoutPosition(), Toast.LENGTH_SHORT).show();
+                AppCompatActivity activity = (AppCompatActivity) v.getContext();
+                Fragment myFragment = new Gun_Detail("sm");
+                activity.getSupportFragmentManager().beginTransaction().replace(R.id.callfrag, myFragment).commit();
+            }
+            else if(getLayoutPosition()==3){
+                //Do whatever you want here
+                //Toast.makeText(v.getContext(), "position = " + getLayoutPosition(), Toast.LENGTH_SHORT).show();
+                AppCompatActivity activity = (AppCompatActivity) v.getContext();
+                Fragment myFragment = new Gun_Detail("lm");
+                activity.getSupportFragmentManager().beginTransaction().replace(R.id.callfrag, myFragment).commit();
+
+            }
+            else if(getLayoutPosition()==4){
+                //Do whatever you want here
+               // Toast.makeText(v.getContext(), "position = " + getLayoutPosition(), Toast.LENGTH_SHORT).show();
+                AppCompatActivity activity = (AppCompatActivity) v.getContext();
+                Fragment myFragment = new Gun_Detail("ba");
+                activity.getSupportFragmentManager().beginTransaction().replace(R.id.callfrag, myFragment).commit();
+
+            }
+            else if(getLayoutPosition()==5){
+                //Do whatever you want here
+                //Toast.makeText(v.getContext(), "position = " + getLayoutPosition(), Toast.LENGTH_SHORT).show();
+                AppCompatActivity activity = (AppCompatActivity) v.getContext();
+                Fragment myFragment = new Gun_Detail("pt");
+                activity.getSupportFragmentManager().beginTransaction().replace(R.id.callfrag, myFragment).commit();
+
+            }
+            else if(getLayoutPosition()==6){
+                //Do whatever you want here
+               // Toast.makeText(v.getContext(), "position = " + getLayoutPosition(), Toast.LENGTH_SHORT).show();
+                AppCompatActivity activity = (AppCompatActivity) v.getContext();
+                Fragment myFragment = new Gun_Detail("me");
+                activity.getSupportFragmentManager().beginTransaction().replace(R.id.callfrag, myFragment).commit();
+
+            }
+            else if(getLayoutPosition()==7){
+                //Do whatever you want here
+                //Toast.makeText(v.getContext(), "position = " + getLayoutPosition(), Toast.LENGTH_SHORT).show();
+                AppCompatActivity activity = (AppCompatActivity) v.getContext();
+                Fragment myFragment = new Gun_Detail("sh");
+                activity.getSupportFragmentManager().beginTransaction().replace(R.id.callfrag, myFragment).commit();
+
+            }
+            else if(getLayoutPosition()==8){
+                //Do whatever you want here
+                // Toast.makeText(v.getContext(), "position = " + getLayoutPosition(), Toast.LENGTH_SHORT).show();
+                AppCompatActivity activity = (AppCompatActivity) v.getContext();
+                Fragment myFragment = new Gun_Detail("cr");
+                activity.getSupportFragmentManager().beginTransaction().replace(R.id.callfrag, myFragment).commit();
+
+            }
+
         }
     }
 }

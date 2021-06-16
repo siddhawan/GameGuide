@@ -59,12 +59,12 @@ public class ConsumablesItems extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
-    int images[] = {R.drawable.map1 , R.drawable.map2 , R.drawable.map3
+    int images[] = {R.drawable.as01 , R.drawable.bd01 , R.drawable.ed01,R.drawable.fa01 , R.drawable.gc01 , R.drawable.mk01, R.drawable.pk01
     };
-    String s1[] = {"car","truck","van"};
-    String s2[] = {"1000hp","2000hp","1500hp"};
-    String s3[] = {"100km/h","50km/h","80km/h"};
-    String s4[] = {"4","10","5"};
+    String s1[] = {"Adrenaline Syringe","Bandage","Energy drink","Firstaid kit","Gas Can","Medikit","Pain Killer"};
+    String s2[] = {"1000hp","2000hp","1500hp","1000hp","2000hp","1500hp","123"};
+    String s3[] = {"100km/h","50km/h","80km/h","100km/h","50km/h","80km/h","as"};
+    String s4[] = {"1000hp","2000hp","1500hp","1000hp","2000hp","1500hp","123"};
     RecyclerView recyclerView;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

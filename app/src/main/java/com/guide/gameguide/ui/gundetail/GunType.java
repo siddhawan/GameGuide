@@ -59,7 +59,7 @@ public class GunType extends Fragment {
         }
     }
     RecyclerView recyclerView;
-    int image[] = {R.drawable.map2,R.drawable.map3,R.drawable.ar01};
+    int image[] = {R.drawable.map2,R.drawable.map3,R.drawable.ar01,R.drawable.map2,R.drawable.map3,R.drawable.ar01,R.drawable.map2,R.drawable.map3,R.drawable.ar01};
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

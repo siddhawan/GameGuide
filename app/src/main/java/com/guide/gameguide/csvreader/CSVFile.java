@@ -15,19 +15,86 @@ public class CSVFile {
     public CSVFile(InputStream inputStream){
         this.inputStream = inputStream;
     }
-
+    private class StringDArray {
+        private String[] data=new String[0];
+        private int used=0;
+        public void add(String str) {
+            if (used >= data.length){
+                int new_size= used+1;
+                String[] new_data=new String[new_size];
+                java.lang.System.arraycopy( data,0,new_data,0,used);
+                data=new_data;
+            }
+            data[used++] = str;
+        }
+        public int length(){
+            return  used;
+        }
+        public String[] get_araay(){
+            return data;
+        }
+    }
     public List read(){
         List resultList = new ArrayList();
         BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
         try {
             String csvLine;
-
-            while ((csvLine = reader.readLine()) != null) {
+           /* String values;
+           while ((csvLine = reader.readLine()) != null) {
                 String[] row = csvLine.split(",");
 
 
                 resultList.add(row);
                 //System.out.println(Arrays.toString(resultList.get(0)));
+            }
+            /* while ((values = reader.readLine()) != null) {
+                resultList.add(Arrays.asList(values));
+            }*/
+            final char Separator = ',';
+            final char Delimiter = '"';
+            final char LF = '\n';
+            final char CR = '\r';
+            boolean quote_open = false;
+            while ((csvLine = reader.readLine()) != null) {
+                //String[] row = csvLine.split(",");// simple way
+                StringDArray a=new StringDArray();
+                String token="";
+                csvLine+=Separator;
+                for(char c:csvLine.toCharArray()){
+                    switch (c){
+                        case LF: case CR:// not required as we are already read line
+                            quote_open=false;
+                            a.add(token);
+                            token="";
+                            break;
+                        case Delimiter:
+                            quote_open=!quote_open;
+                            break;
+                        case Separator:
+                            if(quote_open==false){
+                                a.add(token);
+                                token="";
+                            }else{
+                                token+=c;
+                            }
+                            break;
+                        default:
+                            token+=c;
+                            break;
+                    }
+                }
+                if(a.length()>0 ) {
+                    if(resultList.size()>0){
+                        String[] header_row =(String[]) resultList.get(0);
+                        if(a.length()>=header_row.length) {
+                            String[] row = a.get_araay();
+                            resultList.add(row);
+                        }
+                    }else{
+                        String[] row = a.get_araay();
+                        resultList.add(row);//header row
+                    }
+                }
             }
         }
         catch (IOException ex) {

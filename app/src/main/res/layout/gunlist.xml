@@ -13,7 +13,6 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="5dp"
-        app:cardBackgroundColor="#ffffff"
         app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,10 +51,10 @@
                 android:layout_width="267dp"
                 android:layout_height="117dp"
                 android:layout_marginStart="72dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="12dp"
                 android:layout_marginEnd="72dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintHorizontal_bias="0.487"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/gunname"
                 tools:srcCompat="@tools:sample/avatars" />
@@ -284,7 +283,7 @@
 
             <TextView
                 android:id="@+id/spawn"
-                android:layout_width="80dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:gravity="center"

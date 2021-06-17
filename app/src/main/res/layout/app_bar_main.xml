@@ -7,15 +7,18 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        style="@style/abcd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/abcd"
         android:theme="@style/Theme.GameGuide.AppBarOverlay">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="match_parent"
             android:background="@color/material_on_surface_stroke"
+            android:elevation="0dp"
             app:popupTheme="@style/Theme.GameGuide.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>

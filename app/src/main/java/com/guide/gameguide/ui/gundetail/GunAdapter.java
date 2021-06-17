@@ -8,6 +8,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.guide.gameguide.R;
@@ -20,7 +22,7 @@ public class GunAdapter extends RecyclerView.Adapter<GunAdapter.GunViewHolder> {
 
 
     public GunAdapter(Context ct, String s1[], String s2[], String s3[], String s4[], String s5[], String s6[], String s7[], String s8[], String s9[], String s10[], String s11[], String s12[], int img[]){
-        context = ct;
+        this.context = ct;
         data1 = s1;
         data2 = s2;
         data3 = s3;
@@ -99,5 +101,12 @@ public class GunAdapter extends RecyclerView.Adapter<GunAdapter.GunViewHolder> {
 //            t4 = itemView.findViewById(R.id.capacityvalue);
 
         }
+    }
+    public static  void onBackPressed()
+    {
+        //AppCompatActivity activity = (AppCompatActivity)getContext();
+        //popBackStack();
+        //Fragment myFragment = new GunType();
+        //getSupportFragmentManager().beginTransaction().replace(R.id.callfrag, myFragment).addToBackStack("old").commit();
     }
 }

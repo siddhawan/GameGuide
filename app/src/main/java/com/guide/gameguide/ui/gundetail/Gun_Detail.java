@@ -179,8 +179,5 @@ public class Gun_Detail extends Fragment {
         }
     }
 
-    public static void onBackPressed()
-    {
 
-    }
 }

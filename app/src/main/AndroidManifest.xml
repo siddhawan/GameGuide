@@ -37,12 +37,9 @@
 
         <activity
             android:name=".ui.DisplayMap"
-            android:label="map">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:label="map"
+            >
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
     </application>

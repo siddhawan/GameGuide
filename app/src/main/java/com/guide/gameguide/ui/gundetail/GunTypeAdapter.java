@@ -21,6 +21,7 @@ import com.guide.gameguide.R;
 import com.guide.gameguide.ui.slideshow.SlideshowFragment;
 
 public class GunTypeAdapter extends RecyclerView.Adapter<GunTypeAdapter.GunTypeViewHolder> {
+
     Context context ;
     int img[];
     public GunTypeAdapter(Context ct, int[] image) {
@@ -69,7 +70,7 @@ public class GunTypeAdapter extends RecyclerView.Adapter<GunTypeAdapter.GunTypeV
                 //Do whatever you want here
                 AppCompatActivity activity = (AppCompatActivity) v.getContext();
                 Fragment myFragment = new Gun_Detail("ar");
-                activity.getSupportFragmentManager().beginTransaction().replace(R.id.callfrag, myFragment).addToBackStack(null).commit();
+                activity.getSupportFragmentManager().beginTransaction().replace(R.id.callfrag, myFragment).addToBackStack("old").commit();
 
             }else if(getLayoutPosition()==1){
                 //Do whatever you want here
@@ -135,5 +136,6 @@ public class GunTypeAdapter extends RecyclerView.Adapter<GunTypeAdapter.GunTypeV
             }
 
         }
+
     }
 }

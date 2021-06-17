@@ -59,11 +59,11 @@ public class VehiclesList extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
-    int images[] = {R.drawable.boat , R.drawable.uazopen , R.drawable.aqua,
-            R.drawable.motor3 , R.drawable.mirado , R.drawable.scooter,
-            R.drawable.uazclosed , R.drawable.tukshai , R.drawable.darcia,
-            R.drawable.minibus , R.drawable.motor , R.drawable.pickup,
-            R.drawable.buggy
+    int images[] = {R.drawable.vh13 , R.drawable.uazopen , R.drawable.vh14,
+            R.drawable.vh05 , R.drawable.vh10 , R.drawable.vh08,
+            R.drawable.uazclosed , R.drawable.tukshai , R.drawable.vh09,
+            R.drawable.minibus , R.drawable.vh06 , R.drawable.pickup,
+            R.drawable.vh01
     };
     String s1[] = {"PC-117","UAZ OPEN TOP","AQUARAII","MOTERCYCLE W SIDECAR","MIRADO","SCOOTER","UAZ CLOSED TOP","TUKSHAI","DARCIA 1300","MINI BUS","MOTORCYCLE","PICKUP","BUGGY"};
     String s2[] = {"1520hp","1820hp","N/A","1025hp","N/A","1025hp","1820hp","1000hp","1820hp","1680hp","1025hp","N/A","1540hp"};

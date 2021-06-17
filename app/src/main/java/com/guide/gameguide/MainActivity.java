@@ -1,13 +1,19 @@
 package com.guide.gameguide;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
+import com.guide.gameguide.ui.gundetail.GunType;
+import com.guide.gameguide.ui.gundetail.Gun_Detail;
 
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -17,7 +23,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
-
     private AppBarConfiguration mAppBarConfiguration;
 
     @Override
@@ -60,4 +65,15 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+//    @Override
+//    public void onBackPressed()
+//    {
+//        super.onBackPressed();
+//        GunType.onBackPressed();
+//        Log.e("onbackpressed",  String.valueOf(getSupportFragmentManager().getBackStackEntryCount()));
+//        Fragment myfrag = new Gun_Detail("a");
+//        myfrag.getChildFragmentManager().beginTransaction().replace(R.id.gundet,myfrag).commit();
+////        getSupportFragmentManager().beginTransaction().replace(R.id.gundet,myfrag).commit();
+//
+//    }
 }

@@ -8,9 +8,10 @@
 
     <com.google.android.material.appbar.AppBarLayout
         style="@style/abcd"
+        android:id="@+id/abcd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/abcd"
+
         android:theme="@style/Theme.GameGuide.AppBarOverlay">
 
         <androidx.appcompat.widget.Toolbar

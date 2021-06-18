@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AlphaAnimation;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -26,6 +27,7 @@ public class GunTypeAdapter extends RecyclerView.Adapter<GunTypeAdapter.GunTypeV
 
     Context context ;
     int img[];
+    private AlphaAnimation buttonClick = new AlphaAnimation(1F, 0.8F);
     public GunTypeAdapter(Context ct, int[] image) {
         context = ct;
         img = image;
@@ -66,7 +68,8 @@ public class GunTypeAdapter extends RecyclerView.Adapter<GunTypeAdapter.GunTypeV
         @Override
         public void onClick(View v) {
 
-
+            buttonClick.setDuration(1);
+            v.startAnimation(buttonClick);
             //go through each item if you have few items within recycler view
             if(getLayoutPosition()==0){
                 //Do whatever you want here

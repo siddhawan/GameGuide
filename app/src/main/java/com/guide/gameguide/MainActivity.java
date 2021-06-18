@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_GunType, R.id.nav_gallery, R.id.nav_slideshow,R.id.nav_Title1,R.id.nav_Vehicles,R.id.nav_Consumables)
+                R.id.nav_GunType, R.id.nav_home,R.id.nav_Title1,R.id.nav_Vehicles,R.id.nav_Consumables)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
     {
         super.onBackPressed();
         GunAdapter.onBackPressed();
+        getFragmentManager().popBackStackImmediate();
 //        Log.e("onbackpressed",  String.valueOf(getSupportFragmentManager().getBackStackEntryCount()));
 //        Fragment myfrag = new Gun_Detail("a");
 //        myfrag.getChildFragmentManager().beginTransaction().replace(R.id.gundet,myfrag).commit();

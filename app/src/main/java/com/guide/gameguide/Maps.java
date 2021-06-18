@@ -14,12 +14,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AlphaAnimation;
 
 import java.lang.reflect.Field;
 
 public class Maps extends Fragment {
 
     private Title1ViewModel mViewModel;
+
 
     public static Maps newInstance() {
         return new Maps();

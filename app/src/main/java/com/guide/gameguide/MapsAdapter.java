@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AlphaAnimation;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
@@ -20,6 +21,7 @@ import java.io.File;
 public class MapsAdapter extends RecyclerView.Adapter<MapsAdapter.MapsViewHolder> {
     Context context;
     int images[];
+    private AlphaAnimation buttonClick = new AlphaAnimation(1F, 0.8F);
     public MapsAdapter(Context ct ,int img[]){
               context = ct;
               images = img;
@@ -54,10 +56,14 @@ public class MapsAdapter extends RecyclerView.Adapter<MapsAdapter.MapsViewHolder
 
         @Override
         public void onClick(View v) {
+
+            buttonClick.setDuration(1);
+            v.startAnimation(buttonClick);
             if(getLayoutPosition()==0){
                 Intent myIntent = new Intent(v.getContext(), DisplayMap.class);
                 myIntent.putExtra("message",getLayoutPosition());
                 v.getContext().startActivity(myIntent);
+
             }
 
             if(getLayoutPosition()==1){

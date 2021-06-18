@@ -6,24 +6,21 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_GunType"
-            android:icon="@drawable/ic_menu_slideshow"
+
             android:title="Armory" />
-        <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+
 
         <item
             android:id="@+id/nav_Title1"
-            android:icon="@drawable/ic_menu_slideshow"
+
             android:title="Maps" />
         <item
             android:id="@+id/nav_Vehicles"
-            android:icon="@drawable/ic_menu_slideshow"
+
             android:title="Vehicles" />
         <item
             android:id="@+id/nav_Consumables"
-            android:icon="@drawable/ic_menu_slideshow"
+
             android:title="Consumables" />
 
 

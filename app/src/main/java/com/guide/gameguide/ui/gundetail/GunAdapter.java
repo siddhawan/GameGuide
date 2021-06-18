@@ -17,6 +17,7 @@ import com.guide.gameguide.ui.vehicles.VehiclesAdapter;
 
 public class GunAdapter extends RecyclerView.Adapter<GunAdapter.GunViewHolder> {
     Context context;
+
     String data1[],data2[],data3[],data4[],data5[],data6[],data7[],data8[],data9[],data10[],data11[],data12[];
     int images[];
 
@@ -104,6 +105,7 @@ public class GunAdapter extends RecyclerView.Adapter<GunAdapter.GunViewHolder> {
     }
     public static  void onBackPressed()
     {
+       // getFragmentManager().popBackStackImmediate();
         //AppCompatActivity activity = (AppCompatActivity)getContext();
         //popBackStack();
         //Fragment myFragment = new GunType();

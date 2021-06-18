@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.guide.gameguide">
 
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
-    <uses-feature android:name="android.hardware.type.watch" />
+
 
     <application
         android:allowBackup="true"
@@ -13,6 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GameGuide">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
 
 
         <!--
@@ -36,7 +39,7 @@
         </activity>
         <activity
             android:name=".ui.DisplayMap"
-            android:label="Map"></activity>
+            android:label="Map" />
     </application>
 
 </manifest>

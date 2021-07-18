@@ -27,5 +27,7 @@
         <item>Glider</item>
         <item>Loot Heat</item>
     </string-array>
+
+
     <string name="title_activity_gun_detail">GunDetailActivity</string>
 </resources>

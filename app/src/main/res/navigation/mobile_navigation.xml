@@ -44,4 +44,10 @@
         android:name="com.guide.gameguide.ui.consumables.ConsumablesItems"
         android:label="Consumables"
         tools:layout="@layout/fragment_consumables_items" />
+
+    <fragment
+        android:id="@+id/nav_comparison"
+        android:name="com.guide.gameguide.ui.comparison.ComparisonWeapon"
+        android:label="Comparison"
+        tools:layout="@layout/fragment_comparison_weapon" />
 </navigation>

@@ -2,6 +2,7 @@ package com.guide.gameguide;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 
@@ -11,13 +12,19 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
+import com.guide.gameguide.ui.attachments.AttachmentsList;
+import com.guide.gameguide.ui.comparison.ComparisonWeapon;
+import com.guide.gameguide.ui.consumables.ConsumablesItems;
 import com.guide.gameguide.ui.gundetail.GunAdapter;
 import com.guide.gameguide.ui.gundetail.GunType;
 import com.guide.gameguide.ui.gundetail.Gun_Detail;
+import com.guide.gameguide.ui.vehicles.VehiclesList;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -29,15 +36,42 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import org.jetbrains.annotations.NotNull;
+
 public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     AdView mAdView;
+    BottomNavigationView bottomNavigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
+        bottomNavigationView= findViewById(R.id.bottom_navigator);
+        getSupportFragmentManager().beginTransaction().replace(R.id.container,new GunType()).commit();
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull @NotNull MenuItem item) {
+                Fragment fragment=null;
+                switch (item.getItemId()){
+                    case R.id.bar_Armory:
+                        fragment= new GunType();
+                        break;
+                    case R.id.bar_maps:
+                        fragment= new Maps();
+                        break;
+                    case R.id.bar_vehicles:
+                        fragment= new AttachmentsList();
+                        break;
+                    case R.id.bar_consumables:
+                        fragment= new ComparisonWeapon();
+                        break;
+                }
+                getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
+                return true;
+            }
+        });
+
 
         FloatingActionButton fab = findViewById(R.id.fab);
 
@@ -59,17 +93,17 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = findViewById(R.id.nav_view);
+        //Layout drawer = findViewById(R.id.drawer_layout);
+        //NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
-        mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_GunType, R.id.nav_home,R.id.nav_Title1,R.id.nav_Vehicles,R.id.nav_Consumables,R.id.nav_comparison)
-                .setDrawerLayout(drawer)
-                .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
-        NavigationUI.setupWithNavController(navigationView, navController);
+        //mAppBarConfiguration = new AppBarConfiguration.Builder(
+          //      R.id.nav_GunType, R.id.nav_home,R.id.nav_Title1,R.id.nav_Vehicles,R.id.nav_Consumables,R.id.nav_comparison)
+            //    .setDrawerLayout(drawer)
+              //  .build();
+        //NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+       // NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
+       // NavigationUI.setupWithNavController(navigationView, navController);
     }
 
     @Override

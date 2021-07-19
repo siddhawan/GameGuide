@@ -1,0 +1,39 @@
+at01,Choke(SG),Muzzle,"Sawed-off , S1897 , S686"," Tightens Shotgun Bullet Spread , Increases Shotgun's Effective Range"
+at02,"Compensator(AR, DMR, S12K)",Muzzle,"AKM, M16A4, M416, SCAR-L, S12K, SLR, SKS, Mini 14, Mk14 EBR, QBZ95, QBU, Beryl M762, Mk47, G36C",Reduces maximum horizontal & vertical recoil
+at03,"Compensator(DMR,SR)",Muzzle,"M24, AWM, SKS, Kar98k, Mk14 EBR, Mini 14, SLR, QBU",Reduces maximum horizontal & vertical recoil.
+at04,Compensator(SMG),Muzzle,"Micro UZI, PP-19 Bizon, UMP9, Vector",Reduces maximum horizontal & vertical recoil.
+at05,Duckbill(SG),Muzzle,"S1897, S12K","Lessens Vertical Bullet Spread, Best For Close-Range Combat."
+at06,"Flash Hider(AR, DMR, S12K)",Muzzle,"AKM, M16A4, M416, SCAR-L S12K, SLR, SKS, Mini 14, Mk14 EBR, QBZ95, QBU, Beryl M762, G36C",Eliminates the gun muzzle flash and reduces little horizontal & vertical recoil.
+at07,"Flash Hider(DMR, SR)",Muzzle,"M24, AWM, SKS, Kar98k, Mk14 EBR, Mini 14, SLR, QBU",Eliminates the gun muzzle flash and reduces little horizontal & vertical recoil.
+at08,Flash Hider(SMG),Muzzle,"Micro UZI, PP-19 Bizon, UMP9, Vector",Eliminates the gun muzzle flash and reduces little horizontal & vertical recoil.
+at09,"Suppressor(AR, DMR, S12K)",Muzzle,"AKM, M16A4, M416, SCAR-L, S12K, Groza, AUG A3, SLR, SKS, Mini 14, Mk14 EBR, QBZ95, QBU, Beryl M762, Mk47, G36C ",Reduces gunshot sound volume & eliminates gun muzzle flash.
+at10,"Suppressor(DMR, SR)",Muzzle,"M24, AWM, SKS, Kar98k, Mk14 EBR?, Mini 14, SLR, QBU",Reduces gunshot sound volume & eliminates gun muzzle flash.
+at11,"Suppressor(Handgun, SMG)",Muzzle,"MP5K, Micro UZI, P18C, P1911, P92, PP-19 Bizon, R1895, Skorpion, Tommy Gun, UMP45, Vector",Reduces gunshot sound volume & eliminates gun muzzle flash.
+at12,Angled Foregrip,Lower Rail (Grip),"M416, SCAR-L, UMP9, SKS, AUG A3, Beryl M762??, Mk47, G36C, MP5K",Reduces horizontal recoil and makes it faster to switch on Aim Down Sight(ADS). it does not help you to control vertical recoil.
+at13,Half Grip,Lower Rail (Grip),"M416, SCAR-L, UMP9, Vector, SKS, AUG A3, KRISS Vector, QBZ95, Mk47, Skorpion, MP5K",Reduces recoil and increases recoil recovery but it also reduces stability when you fire. you can choose for long-range flights.
+at14,Laser Sight,Lower Rail (Grip),"Vector, AUG A3, Beryl M762, M416, Mk47 Mutant, QBZ, SCAR-L, SKS, Skorpion, G36C, MP5K, Deagle?",Reduces Hip fire spread. you can choose this for close-range fights.
+at15,Light Grip,Lower Rail (Grip),"M416, SCAR-L, UMP9, SKS, AUG A3, KRISS Vector, QBZ95, Beryl M762, Mk47, Skorpion, G36C, MP5K",Significantly increases gun stability & speed of Aiming to the enemy even when you are running.
+at16,Quiver for Crossbow,Lower Rail (Grip),Crossbow,Reduces reload speed for crossbow.
+at17,Thumb Grip ,Lower Rail (Grip),"M416, SCAR-L, UMP9, SKS, AUG A3, QBZ95, Mk47, MP5K",Reduces scope opening time. it also reduces vertical recoil & slightly increases stability.
+at18,Vertical Foregrip ,Lower Rail (Grip),"M416, SCAR-L, UMP9, KRISS Vector, SKS, Tommy Gun, AUG A3, QBZ95, Mk47, Skorpion, G36C, MP5K",Reduces Maximum recoil when you fire. it�s good for mid-range gun spray.
+at19,2X Scope,Upper Rail (Scope),"UMP9, AKM, M16A4, M416, SCAR-L, SKS, S12K, M249, Kar98k, M24, AWM, KRISS Vector, OTs-14 Groza, Mk14 EBR?, Mini 14, DP-28, AUG A3, SLR, QBZ95, QBU, Beryl M762, Mk47, G36C, MP5K",Suitable for close range combat.
+at20,3X Backlit Scope,Upper Rail (Scope),"UMP9, AKM, M16A4, M416, SCAR-L, SKS, S12K, M249, Kar98k, M24, AWM, KRISS Vector, OTs-14 Groza, Mk14 EBR?, Mini 14, DP-28, AUG A3, SLR, QBZ95, QBU, Beryl M762, Mk47, G36C, MP5K",Suitable for close to mid range combat.
+at21,4X ACOG Scope,Upper Rail (Scope),"UMP9, AKM, M16A4, M416, SCAR-L, SKS, S12K, M249, Kar98k, M24, AWM, KRISS Vector, Groza, SKS, Mk14 EBR?, Mini 14, DP-28, AUG A3, SLR, Crossbow, QBZ95, QBU, Beryl M762, Mk47, G36C, MP5K",Suitable for mid range combat.
+at22,6X Scope,Upper Rail (Scope),"Crossbow, UMP45, AKM, M16A4, M416, SCAR-L, SKS, S12K, M249, Kar98k, M24, AWM, KRISS Vector, OTs-14 Groza, Mk14 EBR?, Mini 14, DP-28, AUG A3, SLR, QBZ95, QBU, Beryl M762, Mk47, G36C, MP5K ",Suitable for mid to long range combat.
+at23,8X CQBSS Scope,Upper Rail (Scope),"SKS, Kar98k, M24, AWM, Mk14 EBR?, Mini 14, SLR, QBU",Suitable for long range combat. 
+at24,Canted Sight,Upper Rail (Scope),"Beryl M762, AWM, AUG A3, M416,Mk47 Mutant, QBZ, SCAR-L, G36C, SLR, Mini 14, Mk14 EBR?, QBU, SKS, AWM, M24, Kar98k, UMP9, KRISS Vector, PP-19 Bizon??, S12K, M249, MP5K",Suitable for close range combat.
+at25,Holographic Sight,Upper Rail (Scope),"AKM, AUG A3, AWM, Beryl M762, Crossbow, DP-28, G36C, Groza, Kar98k, M16A4, M249, M24, M416, MP5K, Mini 14, Mk14 EBR, Mk47 Mutant, P18C, P1911, P92, PP-19 Bizon, QBU, QBZ95, R45, S12K, SCAR-L, SKS, SLR, Skorpion, UMP9, Vector, MP5K, Deagle?, Micro UZI",Suitable for close range combat.
+at26,Red Dot Sight,Upper Rail (Scope),"UMP45, AKM, M16A4, M416, SCAR-L, S12K, M249, Kar98k, M24, AWM, SKS, Crossbow, Vector, Groza, P18C, P1911, P92, Mk14 EBR?, Mini 14, DP-28, AUG A3, R45, SLR, QBZ95, QBU, Beryl M762, Mk47, Skorpion, G36C, MP5K, Deagle?, Micro UZI",Suitable for close range combat.
+at27,"Extended Mag(AR, DMR, S12K)",Magazine,"AKM, M16A4, M416, SCAR-L, S12K, Groza, AUG A3, SLR, SKS, Mini 14, Mk14 EBR, QBZ95, QBU, Beryl M762, Mk47, G36C ",Increases magazine Capacity.
+at28,"Extended Mag(DMG, SR)",Magazine,"M24, AWM, SKS, VSS, Mk14 EBR?, Mini 14?, SLR, QBU",Increases magazine Capacity.
+at29,"Extended Mag(Handgun, SMG)",Magazine,"MP5K, Micro UZI, P18C, P1911, P92, Skorpion, Tommy Gun, UMP45, Vector, MP5K, Deagle?",Increases magazine Capacity.
+at30,"Extended Quickdraw Mag(AR, DMR, S12K)",Magazine,"AKM, M16A4, M416, SCAR-L, S12K, Groza, AUG A3, SLR, SKS, Mini 14, Mk14 EBR, QBZ95, QBU, Beryl M762, Mk47, G36C ",Increases magazine Capacity and also reduces Reloading Speed.
+at31,"Extended Quickdraw Mag(DMR, SR)",Magazine,"M24, AWM, SKS, VSS, Mk14 EBR?, Mini 14, SLR, QBU",Increases magazine Capacity and also reduces Reloading Speed.
+at32,"Extended Quickdraw Mag(Handgun, SMG)",Magazine,"MP5K, Micro UZI, P18C, P1911, P92, Tommy Gun, UMP45, Vector, MP5K, Skorpion",Increases magazine Capacity and also reduces Reloading Speed.
+at33,"Quickdraw Mag(AR, DMR, S12K)",Magazine,"AKM, M16A4, M416, SCAR-L, S12K, Groza, AUG A3, SLR, SKS, Mini 14, Mk14 EBR, QBZ95, QBU, Beryl M762, Mk47, G36C",Reduces Reloading Speed.
+at34,"Quickdraw Mag(DMR, SR)",Magazine,"M24, AWM, SKS, VSS, Mk14 EBR?, Mini 14?, SLR, QBU",Reduces Reloading Speed.
+at35,"Quickdraw Mag(Handgun, SMG)",Magazine,"MP5K, Micro UZI, P18C, P1911, P92, Tommy Gun, UMP45, Vector, MP5K",Reduces Reloading Speed.
+at36,"Bullet Loops(SG, Win94, Kar98k)",Stock,"S1897, S686, Kar98k, Win94",Is for Shotguns and Kar98k Sniper. it helps you to increase reloading speed.
+at37,"Cheek Pad(DMR, SR)",Stock,"M24, AWM, Kar98k, SKS, VSS, Mk14 EBR, SLR",Is for Designated Marksman Rifle(DMR) & Sniper Rifle(SR).this stock helps you on reducing vertical recoil.
+at38,Stock for Micro UZI,Stock,"Micro UZI, Skorpion",Is only available for Micro Uzi & Scorpion gun. it increases stability & little Aim Accuracy.
+at39,Tactical Stock,Stock,"M416, Vector, MP5K",Reduces little recoil and increases little Aim Accuracy. It can attach to some Assault Rifle & SMG guns.

@@ -30,7 +30,7 @@ ar03,SCAR-L,5.56mm,41,9000,4,30,40,"Single, Auto ",2.200s,1.900s,870m/s,Ground L
 ar04,AUG A3,5.56mm,41,9000,4,30,40,"Single, Auto",3.666s,3.000s,940m/s,Air Drop Loot
 ar05,QBZ,5.56mm,41,9000,4,30,40,"Single, Auto",2.200s,1.900s,870m/s,Ground Loot
 ar06,G36C,5.56mm,41,10000,4,30,40,"Single, Auto",2.100s,1.900s,870m/s,Ground Loot
-ar07,FAMAS,5.56mm,Nil,Nil,3,25,35,"Single, Auto",4.500s,2.800s,Nil,Ground Loot
+ar07,FAMAS,5.56mm, 37.9,9000,3,25,35,"Single, Auto",4.500s,2.800s,Nil,Ground Loot
 ar08,Mk47,7.62mm,49,10000,5,20,30,"Single, Burst",3.370s,2.780s,780m/s,Ground Loot
 ar09,AKM,7.62mm,47,10000,3,30,40,"Single, Burst",2.900s,2.250s,715m/s,Ground Loot
 ar10,M762,7.62mm,46,10000,4,30,40,"Single, Burst, Auto",2.200s,1.900s,715m/s,Ground Loot

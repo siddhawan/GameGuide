@@ -4,15 +4,23 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageSwitcher;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.guide.gameguide.R;
+import com.guide.gameguide.csvreader.CSVFile;
 
+import java.io.Console;
+import java.io.InputStream;
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -55,6 +63,7 @@ public class ComparisonWeapon extends Fragment {
     }
 
     Spinner spinner1,spinner2;
+    ImageView imageView1,imageView2;
     TextView textView1,textView2,textView3,textView4,textView5,textView6,textView7,textView8,textView9,textView10,textView11,textView12;
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -74,6 +83,8 @@ public class ComparisonWeapon extends Fragment {
         spinner1 = rootView.findViewById(R.id.spinner2);
         spinner2 = rootView.findViewById(R.id.spinner3);
 
+        imageView1 = rootView.findViewById(R.id.gun1);
+        imageView2 = rootView.findViewById(R.id.gun2);
         textView1 = rootView.findViewById(R.id.ammoans1);
         textView2 = rootView.findViewById(R.id.ammoans2);
 
@@ -93,19 +104,130 @@ public class ComparisonWeapon extends Fragment {
         textView12 = rootView.findViewById(R.id.reloadans2);
 
 
+        List<Integer> img=new ArrayList<Integer>();
+        InputStream inputStream1 = getResources().openRawResource(R.raw.damage);
+        CSVFile csvFile1 = new CSVFile(inputStream1);
+        List scoreList1 = csvFile1.read();
+        List<String> dataArray0 = new ArrayList<String>();
+        List<String> dataArray1 = new ArrayList<String>();
+        List<String> spinnerArray1 = new ArrayList<String>();
+        for(Object a : scoreList1) {
+            String[] c = (String[]) a;
+                dataArray0.add(c[0]);
+            dataArray1.add(c[2]);
+                spinnerArray1.add(c[1]);
+            img.add(getResId(c[0], R.drawable.class));
+        }
 
 
+        InputStream inputStream2 = getResources().openRawResource(R.raw.pubgweapon1);
+        CSVFile csvFile2 = new CSVFile(inputStream2);
+        List scoreList2 = csvFile2.read();
+        List<String> datafind = new ArrayList<String>();
+        List<String> dataArray2 = new ArrayList<String>();
+        List<String> dataArray3 = new ArrayList<String>();
+        List<String> dataArray4 = new ArrayList<String>();
+        List<String> dataArray5 = new ArrayList<String>();
+        for(Object a : scoreList2) {
+            String[] c = (String[]) a;
+            datafind.add(c[0]);
+            dataArray2.add(c[2]);
+            dataArray3.add(c[3]);
+            dataArray4.add(c[9]);
+            dataArray5.add(c[11]);
+        }
 
-        List<String> spinnerArray = new ArrayList<String>();
-        spinnerArray.add("what");
-        spinnerArray.add("you");
-        spinnerArray.add("know");
-        spinnerArray.add("about"); // use this function to add list dynamically
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(), android.R.layout.simple_spinner_item, spinnerArray);
+ // use this function to add list dynamically
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(), android.R.layout.simple_spinner_item, spinnerArray1);
         adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
         spinner1.setAdapter(adapter);
         spinner2.setAdapter(adapter);
+        spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                imageView1.setImageResource(img.get(position));
+                textView1.setText(dataArray2.get(datafind.indexOf(dataArray0.get(position))));
+                if (dataArray0.get(position).startsWith("ar")){
+                    textView3.setText("Assault Rifle");
+                }
+                else if (dataArray0.get(position).startsWith("cr")){
+                    textView3.setText("Cross Bow");
+                }else if (dataArray0.get(position).startsWith("lm")){
+                    textView3.setText("LMG");
+                }else if (dataArray0.get(position).startsWith("sm")){
+                    textView3.setText("SMG");
+                }else if (dataArray0.get(position).startsWith("ba")){
+                    textView3.setText("Bolt Action");
+                }else if (dataArray0.get(position).startsWith("pt")){
+                    textView3.setText("Pistol");
+                }else if (dataArray0.get(position).startsWith("sh")){
+                    textView3.setText("Shotgun");
+                }else if (dataArray0.get(position).startsWith("me")){
+                    textView3.setText("Melee");
+                }else if (dataArray0.get(position).startsWith("dm")){
+                    textView3.setText("DMR");
+                }
+
+
+                textView5.setText(dataArray1.get(position));
+                textView7.setText(dataArray3.get(datafind.indexOf(dataArray0.get(position))));
+                textView11.setText(dataArray4.get(datafind.indexOf(dataArray0.get(position))));
+                textView9.setText(dataArray5.get(datafind.indexOf(dataArray0.get(position))));
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+        spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                imageView2.setImageResource(img.get(position));
+                textView2.setText(dataArray2.get(datafind.indexOf(dataArray0.get(position))));
+                if (dataArray0.get(position).startsWith("ar")){
+                    textView4.setText("Assault Rifle");
+                }
+                else if (dataArray0.get(position).startsWith("cr")){
+                    textView4.setText("Cross Bow");
+                }else if (dataArray0.get(position).startsWith("lm")){
+                    textView4.setText("LMG");
+                }else if (dataArray0.get(position).startsWith("sm")){
+                    textView4.setText("SMG");
+                }else if (dataArray0.get(position).startsWith("ba")){
+                    textView4.setText("Bolt Action");
+                }else if (dataArray0.get(position).startsWith("pt")){
+                    textView4.setText("Pistol");
+                }else if (dataArray0.get(position).startsWith("sh")){
+                    textView4.setText("Shotgun");
+                }else if (dataArray0.get(position).startsWith("me")){
+                    textView4.setText("Melee");
+                }else if (dataArray0.get(position).startsWith("dm")){
+                    textView4.setText("DMR");
+                }
+                textView6.setText(dataArray1.get(position));
+                textView8.setText(dataArray3.get(datafind.indexOf(dataArray0.get(position))));
+                textView12.setText(dataArray4.get(datafind.indexOf(dataArray0.get(position))));
+                textView10.setText(dataArray5.get(datafind.indexOf(dataArray0.get(position))));
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
         return rootView;
     }
+    public static int getResId(String resName, Class<?> c) {
+
+        try {
+            Field idField = c.getDeclaredField(resName);
+            return idField.getInt(idField);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return -1;
+        }
+    }
+
 }

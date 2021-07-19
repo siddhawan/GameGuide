@@ -11,8 +11,11 @@
         android:id="@+id/spinner2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
         android:layout_marginTop="40dp"
+        android:dropDownHeight="3dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.100"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,8 +23,11 @@
         android:id="@+id/spinner3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="80dp"
+
+        android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".900"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/spinner2" />
 
     <ScrollView
@@ -37,15 +43,17 @@
         app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
 
             <LinearLayout
                 android:id="@+id/images"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="138dp"
                 android:orientation="horizontal"
                 android:padding="10dp">
 
@@ -67,11 +75,12 @@
             </LinearLayout>
 
             <LinearLayout
+                style="@style/abcd"
                 android:id="@+id/ammo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:background="#80807C7C"
+
                 android:orientation="horizontal"
                 android:padding="10dp">
 
@@ -99,7 +108,6 @@
                 android:id="@+id/ammoans"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#80FFFFFF"
                 android:orientation="horizontal"
                 android:padding="10dp">
 
@@ -120,11 +128,11 @@
             </LinearLayout>
 
             <LinearLayout
+                style="@style/abcd"
                 android:id="@+id/guntypee"
 
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#807C7C"
                 android:orientation="horizontal"
                 android:padding="10dp">
 
@@ -174,10 +182,9 @@
 
             <LinearLayout
                 android:id="@+id/dmghead"
-
+                style="@style/abcd"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#807C7C"
                 android:orientation="horizontal"
                 android:padding="10dp">
 
@@ -226,9 +233,9 @@
 
             <LinearLayout
                 android:id="@+id/dmgbody"
+                style="@style/abcd"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#807C7C"
                 android:orientation="horizontal"
                 android:padding="10dp">
 
@@ -277,9 +284,9 @@
 
             <LinearLayout
                 android:id="@+id/bulletspeed"
+                style="@style/abcd"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#807C7C"
                 android:orientation="horizontal"
                 android:padding="10dp">
 
@@ -328,9 +335,9 @@
 
             <LinearLayout
                 android:id="@+id/reload"
+                style="@style/abcd"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#807C7C"
                 android:orientation="horizontal"
                 android:padding="10dp">
 
@@ -355,6 +362,7 @@
 
             <LinearLayout
                 android:id="@+id/reloadans"
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -378,49 +386,6 @@
                     android:text="TextView" />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView49"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" />
-
-                <TextView
-                    android:id="@+id/textView50"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView51"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" />
-
-                <TextView
-                    android:id="@+id/textView52"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" />
-            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

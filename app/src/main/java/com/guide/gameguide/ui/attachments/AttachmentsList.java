@@ -3,6 +3,7 @@ package com.guide.gameguide.ui.attachments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
@@ -10,7 +11,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.guide.gameguide.R;
+import com.guide.gameguide.csvreader.CSVFile;
 
+import java.io.InputStream;
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -70,12 +74,31 @@ public class AttachmentsList extends Fragment {
          img=new ArrayList<Integer>();
          l1 = new ArrayList<String>();
          l2 = new ArrayList<String>();
-
+        InputStream inputStream1 = getResources().openRawResource(R.raw.attachments);
+        CSVFile csvFile1 = new CSVFile(inputStream1);
+        List scoreList1 = csvFile1.read();
+        for(Object a : scoreList1) {
+            String[] c = (String[]) a;
+            l1.add(c[1]);
+            l2.add(c[4]);
+            img.add(getResId(c[0], R.drawable.class));
+        }
         // Inflate the layout for this fragment
         rootView =  inflater.inflate(R.layout.fragment_attachmentsrecyler, container, false);
         AttachmentAdapter attachmentAdapter = new AttachmentAdapter(container.getContext(),img.stream().mapToInt(i->i).toArray(),l1.toArray(new String[l1.size()]),l2.toArray(new String[l1.size()]));
         recyclerView = (RecyclerView) rootView.findViewById(R.id.attachmentslist);
-
+        recyclerView.setAdapter(attachmentAdapter);
+        recyclerView.setLayoutManager( new LinearLayoutManager(getContext()));
         return rootView;
+    }
+    public static int getResId(String resName, Class<?> c) {
+
+        try {
+            Field idField = c.getDeclaredField(resName);
+            return idField.getInt(idField);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return -1;
+        }
     }
 }

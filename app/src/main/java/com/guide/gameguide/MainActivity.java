@@ -1,10 +1,13 @@
 package com.guide.gameguide;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
+import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
@@ -15,7 +18,8 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
-import com.google.android.material.navigation.NavigationView;
+
+import com.guide.gameguide.ui.TabbedFragment;
 import com.guide.gameguide.ui.attachments.AttachmentsList;
 import com.guide.gameguide.ui.comparison.ComparisonWeapon;
 import com.guide.gameguide.ui.consumables.ConsumablesItems;
@@ -48,14 +52,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         bottomNavigationView= findViewById(R.id.bottom_navigator);
-        getSupportFragmentManager().beginTransaction().replace(R.id.container,new GunType()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container,new TabbedFragment()).commit();
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull @NotNull MenuItem item) {
                 Fragment fragment=null;
+
                 switch (item.getItemId()){
                     case R.id.bar_Armory:
-                        fragment= new GunType();
+                        fragment= new TabbedFragment();
                         break;
                     case R.id.bar_maps:
                         fragment= new Maps();
@@ -83,9 +88,6 @@ public class MainActivity extends AppCompatActivity {
                 mAdView.loadAd(adRequest);
             }
         });
-
-
-
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -12,13 +12,15 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <item name="android:textColor">@color/black</item>
-        <item name="cardBackgroundColor" >@color/grdient_white</item>
+        <item name="cardBackgroundColor">@color/grdient_white</item>
         <!-- Customize your theme here. -->
     </style>
+
     <style name="textview1">
         <item name="android:textColor">@color/black</item>
 
     </style>
+
     <style name="abcd">
         <item name="android:background">@color/grdient_white</item>
     </style>

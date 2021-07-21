@@ -8,17 +8,17 @@
         />
     <item
         android:id="@+id/bar_maps"
+        android:title="Compare"
+        android:icon="@drawable/ic_compare_24"
+        />
+    <item
+        android:id="@+id/bar_vehicles"
         android:title="Maps"
         android:icon="@drawable/ic_maps_24"
         />
     <item
-        android:id="@+id/bar_vehicles"
-        android:title="Vehicles"
-        android:icon="@drawable/ic_veh_24"
-        />
-    <item
         android:id="@+id/bar_consumables"
-        android:title="Consumables"
+        android:title="Damage Profile"
         android:icon="@drawable/ic_consumable_24"
         />
 

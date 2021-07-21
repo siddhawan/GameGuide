@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.TabbedFragment"
     android:layout_above="@+id/adviewconstraint">
 
@@ -17,27 +18,40 @@
     </androidx.viewpager.widget.ViewPager>
 
     <com.google.android.material.tabs.TabLayout
+        app:tabMode="scrollable"
         android:id="@+id/tabLayout1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+
+        >
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabitem1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Monday" />
+            android:text="Guns" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabitem2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tuesday" />
+            android:text="Consumables" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabitem3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Wednesday" />
+            android:text="Attachments" />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabitem4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicles" />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabitem5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wearables" />
     </com.google.android.material.tabs.TabLayout>
 
 </RelativeLayout>

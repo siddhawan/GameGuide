@@ -2,12 +2,15 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/abcd"
     android:id="@+id/comparison"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.comparison.ComparisonWeapon">
+    tools:context=".ui.comparison.ComparisonWeapon"
+    >
 
     <Spinner
+
         android:id="@+id/spinner2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,11 +26,12 @@
         android:id="@+id/spinner3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:textSize="20sp"
         android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias=".900"
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toTopOf="@+id/spinner2" />
 
     <ScrollView
@@ -43,7 +47,7 @@
         app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
-
+           
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
@@ -51,6 +55,7 @@
             >
 
             <LinearLayout
+                android:background="@android:color/transparent"
                 android:id="@+id/images"
                 android:layout_width="match_parent"
                 android:layout_height="138dp"
@@ -92,7 +97,7 @@
                     android:foregroundGravity="center"
                     android:gravity="center"
                     android:text="AMMO"
-                    android:textSize="30sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textView26"
@@ -101,7 +106,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="AMMO"
-                    android:textSize="30sp" />
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -109,27 +114,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:padding="10dp">
+                android:paddingTop="10dp"
+                android:paddingBottom="25dp">
 
                 <TextView
                     android:id="@+id/ammoans1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="center" />
+                    android:gravity="center"
+                    android:textSize="17sp" />
 
                 <TextView
                     android:id="@+id/ammoans2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="center" />
+                    android:gravity="center"
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
             <LinearLayout
-                style="@style/abcd"
                 android:id="@+id/guntypee"
+                style="@style/abcd"
 
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -143,7 +151,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="TYPE"
-                    android:textSize="30sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textView30"
@@ -152,7 +160,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="TYPE"
-                    android:textSize="30sp" />
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -161,7 +169,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:padding="10dp">
+                android:paddingTop="10dp"
+                android:paddingBottom="25dp">
 
                 <TextView
                     android:id="@+id/guntypeans1"
@@ -169,7 +178,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textSize="17sp" />
 
                 <TextView
                     android:id="@+id/guntypeans2"
@@ -177,7 +187,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textSize="17sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -195,7 +206,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="HEADSHOT"
-                    android:textSize="30sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textView34"
@@ -204,7 +215,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="HEADSHOT"
-                    android:textSize="30sp" />
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -212,7 +223,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:padding="10dp">
+                android:paddingTop="10dp"
+                android:paddingBottom="25dp">
 
                 <TextView
                     android:id="@+id/dmgheadans1"
@@ -220,7 +232,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textSize="17sp" />
 
                 <TextView
                     android:id="@+id/dmgheadans2"
@@ -228,7 +241,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textSize="17sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -246,7 +260,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="BODYSHOT"
-                    android:textSize="30sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textView38"
@@ -255,7 +269,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="BODYSHOT"
-                    android:textSize="30sp" />
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -263,7 +277,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:padding="10dp">
+                android:paddingTop="10dp"
+                android:paddingBottom="25dp">
 
                 <TextView
                     android:id="@+id/dmgbodyans1"
@@ -271,7 +286,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textSize="17sp" />
 
                 <TextView
                     android:id="@+id/dmgbodyans2"
@@ -279,7 +295,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textSize="17sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -297,7 +314,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="SPEED"
-                    android:textSize="30sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textView42"
@@ -306,7 +323,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="SPEED"
-                    android:textSize="30sp" />
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -314,7 +331,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:padding="10dp">
+                android:paddingTop="10dp"
+                android:paddingBottom="25dp">
 
                 <TextView
                     android:id="@+id/bulletspeedans1"
@@ -322,7 +340,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textSize="17sp" />
 
                 <TextView
                     android:id="@+id/bulletspeedans2"
@@ -330,7 +349,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textSize="17sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -348,7 +368,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="RELOAD TIME"
-                    android:textSize="30sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textView46"
@@ -357,7 +377,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="RELOAD TIME"
-                    android:textSize="30sp" />
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -367,7 +387,8 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:orientation="horizontal"
-                android:padding="10dp">
+                android:paddingTop="10dp"
+                android:paddingBottom="25dp">
 
                 <TextView
                     android:id="@+id/reloadans1"
@@ -375,7 +396,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textSize="17sp" />
 
                 <TextView
                     android:id="@+id/reloadans2"
@@ -383,7 +405,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textSize="17sp" />
             </LinearLayout>
 
 

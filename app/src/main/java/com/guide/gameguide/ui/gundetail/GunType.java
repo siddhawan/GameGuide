@@ -71,7 +71,7 @@ public class GunType extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        container.removeAllViews();
+
         View rootView = inflater.inflate(R.layout.fragment_gun_type, container, false);
          recyclerView = (RecyclerView) rootView.findViewById(R.id.guntypere);
         GunTypeAdapter gunTypeAdapter = new GunTypeAdapter(container.getContext(),image);

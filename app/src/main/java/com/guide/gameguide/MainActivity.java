@@ -63,10 +63,10 @@ public class MainActivity extends AppCompatActivity {
                         fragment= new TabbedFragment();
                         break;
                     case R.id.bar_maps:
-                        fragment= new Maps();
+                        fragment= new ComparisonWeapon();
                         break;
                     case R.id.bar_vehicles:
-                        fragment= new AttachmentsList();
+                        fragment= new Maps();
                         break;
                     case R.id.bar_consumables:
                         fragment= new ComparisonWeapon();

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dmgprofile.DamageProfile">
+
+    <LinearLayout
+        android:id="@+id/sninnerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/dmgprofilegunspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/dmgprofilehelmetspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/dmgprofilevestspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:id="@+id/personfigure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/figure"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ucheshans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+            app:layout_constraintEnd_toEndOf="@+id/personfigure"
+            app:layout_constraintHorizontal_bias="0.376"
+            app:layout_constraintStart_toStartOf="@+id/personfigure"
+            app:layout_constraintTop_toTopOf="@+id/personfigure"
+            app:layout_constraintVertical_bias="0.377" />
+
+        <TextView
+            android:id="@+id/larmans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+            app:layout_constraintEnd_toEndOf="@+id/personfigure"
+            app:layout_constraintHorizontal_bias="0.96"
+            app:layout_constraintStart_toStartOf="@+id/personfigure"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.375" />
+
+        <TextView
+            android:id="@+id/ulegans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+            app:layout_constraintEnd_toEndOf="@+id/personfigure"
+            app:layout_constraintHorizontal_bias="0.92"
+            app:layout_constraintStart_toStartOf="@+id/personfigure"
+            app:layout_constraintTop_toTopOf="@+id/personfigure"
+            app:layout_constraintVertical_bias="0.625" />
+
+        <TextView
+            android:id="@+id/footans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+            app:layout_constraintEnd_toEndOf="@+id/personfigure"
+            app:layout_constraintHorizontal_bias="0.917"
+            app:layout_constraintStart_toStartOf="@+id/personfigure"
+            app:layout_constraintTop_toTopOf="@+id/personfigure"
+            app:layout_constraintVertical_bias="0.909" />
+
+        <TextView
+            android:id="@+id/stoans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+            app:layout_constraintEnd_toEndOf="@+id/personfigure"
+            app:layout_constraintHorizontal_bias="0.376"
+            app:layout_constraintStart_toStartOf="@+id/personfigure"
+            app:layout_constraintTop_toTopOf="@+id/personfigure"
+            app:layout_constraintVertical_bias="0.45" />
+
+        <TextView
+            android:id="@+id/chestans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+            app:layout_constraintEnd_toEndOf="@+id/personfigure"
+            app:layout_constraintHorizontal_bias="0.376"
+            app:layout_constraintStart_toStartOf="@+id/personfigure"
+            app:layout_constraintTop_toTopOf="@+id/personfigure"
+            app:layout_constraintVertical_bias="0.291" />
+
+        <TextView
+            android:id="@+id/headdmgans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+            app:layout_constraintEnd_toEndOf="@+id/personfigure"
+            app:layout_constraintHorizontal_bias="0.824"
+            app:layout_constraintStart_toStartOf="@+id/personfigure"
+            app:layout_constraintTop_toTopOf="@+id/personfigure"
+            app:layout_constraintVertical_bias="0.024" />
+
+        <TextView
+            android:id="@+id/neckans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+            app:layout_constraintEnd_toEndOf="@+id/personfigure"
+            app:layout_constraintHorizontal_bias="0.872"
+            app:layout_constraintStart_toStartOf="@+id/personfigure"
+            app:layout_constraintTop_toTopOf="@+id/personfigure"
+            app:layout_constraintVertical_bias="0.119" />
+
+        <TextView
+            android:id="@+id/llegans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+            app:layout_constraintEnd_toEndOf="@+id/personfigure"
+            app:layout_constraintHorizontal_bias="0.923"
+            app:layout_constraintStart_toStartOf="@+id/personfigure"
+            app:layout_constraintTop_toTopOf="@+id/personfigure"
+            app:layout_constraintVertical_bias="0.763" />
+
+        <TextView
+            android:id="@+id/uarmans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.898"
+            app:layout_constraintStart_toStartOf="@+id/personfigure"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.263" />
+
+        <TextView
+            android:id="@+id/cans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+            app:layout_constraintEnd_toEndOf="@+id/personfigure"
+            app:layout_constraintHorizontal_bias="0.793"
+            app:layout_constraintStart_toStartOf="@+id/personfigure"
+            app:layout_constraintTop_toTopOf="@+id/personfigure"
+            app:layout_constraintVertical_bias="0.182" />
+
+        <TextView
+            android:id="@+id/hand1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+            app:layout_constraintEnd_toEndOf="@+id/personfigure"
+            app:layout_constraintHorizontal_bias="0.954"
+            app:layout_constraintStart_toStartOf="@+id/personfigure"
+            app:layout_constraintTop_toTopOf="@+id/personfigure"
+            app:layout_constraintVertical_bias="0.466" />
+
+        <TextView
+            android:id="@+id/pelans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.376"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/personfigure"
+            app:layout_constraintVertical_bias="0.496" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

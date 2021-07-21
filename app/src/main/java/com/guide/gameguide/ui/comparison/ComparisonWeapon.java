@@ -110,6 +110,7 @@ public class ComparisonWeapon extends Fragment {
         List scoreList1 = csvFile1.read();
         List<String> dataArray0 = new ArrayList<String>();
         List<String> dataArray1 = new ArrayList<String>();
+
         List<String> spinnerArray1 = new ArrayList<String>();
         for(Object a : scoreList1) {
             String[] c = (String[]) a;

@@ -21,7 +21,8 @@
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/bottom_navigator">
+        android:layout_above="@id/bottom_navigator"
+        android:layout_marginBottom="40dp">
 
 
     </FrameLayout>

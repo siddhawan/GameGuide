@@ -12,6 +12,7 @@ import com.guide.gameguide.ui.comparison.ComparisonWeapon;
 import com.guide.gameguide.ui.consumables.ConsumablesItems;
 import com.guide.gameguide.ui.gundetail.GunType;
 import com.guide.gameguide.ui.vehicles.VehiclesList;
+import com.guide.gameguide.ui.wearables.WearablesList;
 
 public class TabbedPageAdapter extends FragmentPagerAdapter
 {
@@ -32,7 +33,7 @@ public class TabbedPageAdapter extends FragmentPagerAdapter
             case  1 : return new ConsumablesItems();
             case 2: return new AttachmentsList();
             case  3 : return new VehiclesList();
-            case 4: return new VehiclesList();
+            case 4: return new WearablesList();
             default: return null;
         }
     }

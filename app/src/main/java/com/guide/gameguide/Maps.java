@@ -29,7 +29,7 @@ public class Maps extends Fragment {
     int images[] = {R.drawable.erangel , R.drawable.miramar , R.drawable.sanhok, R.drawable.vikendi,R.drawable.karakin};
 
 
-
+    String names[] = {"Erangle","Miramar","Sanhok","Vikendi","karakin"};
     RecyclerView recyclerView;
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
@@ -40,7 +40,7 @@ public class Maps extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_title1, container, false);
         recyclerView = (RecyclerView) rootView.findViewById(R.id.mapsRecycle);
-        MapsAdapter mapsAdapter = new MapsAdapter(container.getContext(),images);
+        MapsAdapter mapsAdapter = new MapsAdapter(container.getContext(),images,names);
         recyclerView.setAdapter(mapsAdapter);
         recyclerView.setLayoutManager( new LinearLayoutManager(getContext()));
 

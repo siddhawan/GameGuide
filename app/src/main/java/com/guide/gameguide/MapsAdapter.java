@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -21,10 +22,12 @@ import java.io.File;
 public class MapsAdapter extends RecyclerView.Adapter<MapsAdapter.MapsViewHolder> {
     Context context;
     int images[];
+    String[] names;
     private AlphaAnimation buttonClick = new AlphaAnimation(1F, 0.8F);
-    public MapsAdapter(Context ct ,int img[]){
+    public MapsAdapter(Context ct ,int img[],String[] name){
               context = ct;
               images = img;
+              names = name;
     }
     @NonNull
     @Override
@@ -38,6 +41,7 @@ public class MapsAdapter extends RecyclerView.Adapter<MapsAdapter.MapsViewHolder
     @Override
     public void onBindViewHolder(@NonNull MapsViewHolder holder, int position) {
         holder.myImages.setImageResource(images[position]);
+        holder.textView.setText((names[position]));
 
     }
 
@@ -48,10 +52,12 @@ public class MapsAdapter extends RecyclerView.Adapter<MapsAdapter.MapsViewHolder
 
     public class MapsViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         ImageView myImages ;
+        TextView textView ;
         public MapsViewHolder(@NonNull View itemView) {
             super(itemView);
             itemView.setOnClickListener(this);
             myImages = itemView.findViewById(R.id.my_maps);
+            textView = itemView.findViewById(R.id.mapnamesonimages);
         }
 
         @Override

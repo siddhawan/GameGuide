@@ -32,18 +32,22 @@
                 android:layout_width="99dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="8dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:srcCompat="@tools:sample/avatars" />
 
             <TextView
                 android:id="@+id/wearablename"
-                android:layout_width="wrap_content"
+                android:layout_width="146dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="44dp"
+                android:lines="2"
+                android:maxLines="2"
                 android:text="TextView"
                 android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/wearbleimg"
                 app:layout_constraintTop_toTopOf="@+id/wearbleimg" />
 
@@ -80,6 +84,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/wearablename"
                 app:layout_constraintStart_toEndOf="@+id/wearablecapaity"
                 app:layout_constraintTop_toTopOf="@+id/wearablecapaity" />
 
@@ -89,6 +94,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/wearcapans"
                 app:layout_constraintStart_toStartOf="@+id/wearcapans"
                 app:layout_constraintTop_toBottomOf="@+id/wearcapans" />
 
@@ -98,6 +104,7 @@
                 android:layout_height="19dp"
                 android:layout_marginTop="4dp"
                 android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/weardurableans"
                 app:layout_constraintStart_toStartOf="@+id/weardurableans"
                 app:layout_constraintTop_toBottomOf="@+id/weardurableans" />
         </androidx.constraintlayout.widget.ConstraintLayout>

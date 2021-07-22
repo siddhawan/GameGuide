@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.guide.gameguide.R;
 
@@ -66,7 +67,9 @@ public class GunType extends Fragment {
         }
     }
     RecyclerView recyclerView;
-    int image[] = {R.drawable.arr,R.drawable.dmr,R.drawable.smg,R.drawable.lmg,R.drawable.srr,R.drawable.pis,R.drawable.mle,R.drawable.sho,R.drawable.crr};
+    TextView nameofguns;
+    String[] gunname = {"Assault Rifle", "DMR" , "SMG" , "LMG" , "Sniper" , "Pistol" , "Melee" , "Shotguns" , "Crossbow"};
+    int image[] = {R.drawable.assault_rifles,R.drawable.dmr,R.drawable.smg,R.drawable.lmg,R.drawable.sniper_rifle,R.drawable.pistol,R.drawable.melee,R.drawable.shotguns,R.drawable.crossbow};
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -74,7 +77,7 @@ public class GunType extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_gun_type, container, false);
          recyclerView = (RecyclerView) rootView.findViewById(R.id.guntypere);
-        GunTypeAdapter gunTypeAdapter = new GunTypeAdapter(container.getContext(),image);
+        GunTypeAdapter gunTypeAdapter = new GunTypeAdapter(container.getContext(),image,gunname);
         recyclerView.setAdapter(gunTypeAdapter);
         recyclerView.setLayoutManager( new LinearLayoutManager(getContext()));
         return  rootView;

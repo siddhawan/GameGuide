@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -27,10 +28,13 @@ public class GunTypeAdapter extends RecyclerView.Adapter<GunTypeAdapter.GunTypeV
 
     Context context ;
     int img[];
+    String names[];
     private AlphaAnimation buttonClick = new AlphaAnimation(1F, 0.8F);
-    public GunTypeAdapter(Context ct, int[] image) {
+    public GunTypeAdapter(Context ct, int[] image,String[] name) {
         context = ct;
         img = image;
+        names = name;
+
     }
 
     @NonNull
@@ -46,7 +50,7 @@ public class GunTypeAdapter extends RecyclerView.Adapter<GunTypeAdapter.GunTypeV
     @Override
     public void onBindViewHolder(@NonNull GunTypeViewHolder holder, int position) {
         holder.myImages.setImageResource(img[position]);
-
+        holder.t.setText(names[position]);
 
     }
 
@@ -58,11 +62,12 @@ public class GunTypeAdapter extends RecyclerView.Adapter<GunTypeAdapter.GunTypeV
 
     public class GunTypeViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         ImageView myImages;
+        TextView t ;
         public GunTypeViewHolder(@NonNull View itemView) {
             super(itemView);
             itemView.setOnClickListener(this);
             myImages = itemView.findViewById(R.id.guntypelist);
-
+            t = itemView.findViewById(R.id.gunnameonimage);
         }
 
         @Override

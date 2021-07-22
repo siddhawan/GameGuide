@@ -17,12 +17,12 @@
     </androidx.viewpager.widget.ViewPager>
 
     <com.google.android.material.tabs.TabLayout
-        app:tabMode="scrollable"
         android:id="@+id/tabLayout1"
+        style="@style/abcd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        >
+        app:tabMode="scrollable">
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabitem1"
@@ -41,11 +41,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Attachments" />
+
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabitem4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Vehicles" />
+
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabitem5"
             android:layout_width="wrap_content"

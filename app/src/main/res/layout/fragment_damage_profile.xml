@@ -7,200 +7,334 @@
     tools:context=".ui.dmgprofile.DamageProfile">
 
     <LinearLayout
-        android:id="@+id/sninnerlayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Spinner
-            android:id="@+id/dmgprofilegunspinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <Spinner
-            android:id="@+id/dmgprofilehelmetspinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <Spinner
-            android:id="@+id/dmgprofilevestspinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-    </LinearLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="50dp">
+        android:orientation="vertical"
+        android:weightSum="3">
 
-        <ImageView
-            android:id="@+id/personfigure"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/heads"
+            style="@style/abcd"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/figure"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:weightSum="3">
 
-        <TextView
-            android:id="@+id/ucheshans"
-            android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Guns"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Helmet"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Vest"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sninnerlayout"
+            style="@style/abcd"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
-            app:layout_constraintEnd_toEndOf="@+id/personfigure"
-            app:layout_constraintHorizontal_bias="0.376"
-            app:layout_constraintStart_toStartOf="@+id/personfigure"
-            app:layout_constraintTop_toTopOf="@+id/personfigure"
-            app:layout_constraintVertical_bias="0.377" />
+            android:layout_below="@id/heads"
+            android:paddingBottom="2dp"
+            android:weightSum="3">
 
-        <TextView
-            android:id="@+id/larmans"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
-            app:layout_constraintEnd_toEndOf="@+id/personfigure"
-            app:layout_constraintHorizontal_bias="0.96"
-            app:layout_constraintStart_toStartOf="@+id/personfigure"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.375" />
+            <Spinner
+                android:id="@+id/dmgprofilegunspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingEnd="10dp" />
 
-        <TextView
-            android:id="@+id/ulegans"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
-            app:layout_constraintEnd_toEndOf="@+id/personfigure"
-            app:layout_constraintHorizontal_bias="0.92"
-            app:layout_constraintStart_toStartOf="@+id/personfigure"
-            app:layout_constraintTop_toTopOf="@+id/personfigure"
-            app:layout_constraintVertical_bias="0.625" />
+            <Spinner
+                android:id="@+id/dmgprofilehelmetspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp" />
 
-        <TextView
-            android:id="@+id/footans"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
-            app:layout_constraintEnd_toEndOf="@+id/personfigure"
-            app:layout_constraintHorizontal_bias="0.917"
-            app:layout_constraintStart_toStartOf="@+id/personfigure"
-            app:layout_constraintTop_toTopOf="@+id/personfigure"
-            app:layout_constraintVertical_bias="0.909" />
+            <Spinner
+                android:id="@+id/dmgprofilevestspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingStart="25dp"
+                android:paddingEnd="15dp" />
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/stoans"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
-            app:layout_constraintEnd_toEndOf="@+id/personfigure"
-            app:layout_constraintHorizontal_bias="0.376"
-            app:layout_constraintStart_toStartOf="@+id/personfigure"
-            app:layout_constraintTop_toTopOf="@+id/personfigure"
-            app:layout_constraintVertical_bias="0.45" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
 
-        <TextView
-            android:id="@+id/chestans"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
-            app:layout_constraintEnd_toEndOf="@+id/personfigure"
-            app:layout_constraintHorizontal_bias="0.376"
-            app:layout_constraintStart_toStartOf="@+id/personfigure"
-            app:layout_constraintTop_toTopOf="@+id/personfigure"
-            app:layout_constraintVertical_bias="0.291" />
+            android:layout_below="@id/sninnerlayout"
+            android:padding="10dp">
 
-        <TextView
-            android:id="@+id/headdmgans"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
-            app:layout_constraintEnd_toEndOf="@+id/personfigure"
-            app:layout_constraintHorizontal_bias="0.824"
-            app:layout_constraintStart_toStartOf="@+id/personfigure"
-            app:layout_constraintTop_toTopOf="@+id/personfigure"
-            app:layout_constraintVertical_bias="0.024" />
+            <ImageView
+                android:id="@+id/personfigure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/persfig"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.842"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.842" />
 
-        <TextView
-            android:id="@+id/neckans"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
-            app:layout_constraintEnd_toEndOf="@+id/personfigure"
-            app:layout_constraintHorizontal_bias="0.872"
-            app:layout_constraintStart_toStartOf="@+id/personfigure"
-            app:layout_constraintTop_toTopOf="@+id/personfigure"
-            app:layout_constraintVertical_bias="0.119" />
+            <TextView
+                android:id="@+id/ucheshans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+                app:layout_constraintEnd_toEndOf="@+id/personfigure"
+                app:layout_constraintHorizontal_bias="0.395"
+                app:layout_constraintStart_toStartOf="@+id/personfigure"
+                app:layout_constraintTop_toTopOf="@+id/personfigure"
+                app:layout_constraintVertical_bias="0.371" />
 
-        <TextView
-            android:id="@+id/llegans"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
-            app:layout_constraintEnd_toEndOf="@+id/personfigure"
-            app:layout_constraintHorizontal_bias="0.923"
-            app:layout_constraintStart_toStartOf="@+id/personfigure"
-            app:layout_constraintTop_toTopOf="@+id/personfigure"
-            app:layout_constraintVertical_bias="0.763" />
+            <TextView
+                android:id="@+id/larmans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+                app:layout_constraintEnd_toEndOf="@+id/personfigure"
+                app:layout_constraintHorizontal_bias="0.92"
+                app:layout_constraintStart_toStartOf="@+id/personfigure"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.357" />
 
-        <TextView
-            android:id="@+id/uarmans"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.898"
-            app:layout_constraintStart_toStartOf="@+id/personfigure"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.263" />
+            <TextView
+                android:id="@+id/ulegans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+                app:layout_constraintEnd_toEndOf="@+id/personfigure"
+                app:layout_constraintHorizontal_bias="0.898"
+                app:layout_constraintStart_toStartOf="@+id/personfigure"
+                app:layout_constraintTop_toTopOf="@+id/personfigure"
+                app:layout_constraintVertical_bias="0.61" />
 
-        <TextView
-            android:id="@+id/cans"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
-            app:layout_constraintEnd_toEndOf="@+id/personfigure"
-            app:layout_constraintHorizontal_bias="0.793"
-            app:layout_constraintStart_toStartOf="@+id/personfigure"
-            app:layout_constraintTop_toTopOf="@+id/personfigure"
-            app:layout_constraintVertical_bias="0.182" />
+            <TextView
+                android:id="@+id/footans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+                app:layout_constraintEnd_toEndOf="@+id/personfigure"
+                app:layout_constraintHorizontal_bias="0.92"
+                app:layout_constraintStart_toStartOf="@+id/personfigure"
+                app:layout_constraintTop_toTopOf="@+id/personfigure"
+                app:layout_constraintVertical_bias="0.92" />
 
-        <TextView
-            android:id="@+id/hand1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
-            app:layout_constraintEnd_toEndOf="@+id/personfigure"
-            app:layout_constraintHorizontal_bias="0.954"
-            app:layout_constraintStart_toStartOf="@+id/personfigure"
-            app:layout_constraintTop_toTopOf="@+id/personfigure"
-            app:layout_constraintVertical_bias="0.466" />
+            <TextView
+                android:id="@+id/stoans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+                app:layout_constraintEnd_toEndOf="@+id/personfigure"
+                app:layout_constraintHorizontal_bias="0.395"
+                app:layout_constraintStart_toStartOf="@+id/personfigure"
+                app:layout_constraintTop_toTopOf="@+id/personfigure"
+                app:layout_constraintVertical_bias="0.436" />
 
-        <TextView
-            android:id="@+id/pelans"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="@+id/personfigure"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.376"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/personfigure"
-            app:layout_constraintVertical_bias="0.496" />
+            <TextView
+                android:id="@+id/chestans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+                app:layout_constraintEnd_toEndOf="@+id/personfigure"
+                app:layout_constraintHorizontal_bias="0.395"
+                app:layout_constraintStart_toStartOf="@+id/personfigure"
+                app:layout_constraintTop_toTopOf="@+id/personfigure"
+                app:layout_constraintVertical_bias="0.287" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/headdmgans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+                app:layout_constraintEnd_toEndOf="@+id/personfigure"
+                app:layout_constraintHorizontal_bias="0.733"
+                app:layout_constraintStart_toStartOf="@+id/personfigure"
+                app:layout_constraintTop_toTopOf="@+id/personfigure"
+                app:layout_constraintVertical_bias="0.01" />
+
+            <TextView
+                android:id="@+id/neckans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+                app:layout_constraintEnd_toEndOf="@+id/personfigure"
+                app:layout_constraintHorizontal_bias="0.759"
+                app:layout_constraintStart_toStartOf="@+id/personfigure"
+                app:layout_constraintTop_toTopOf="@+id/personfigure"
+                app:layout_constraintVertical_bias="0.101" />
+
+            <TextView
+                android:id="@+id/llegans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+                app:layout_constraintEnd_toEndOf="@+id/personfigure"
+                app:layout_constraintHorizontal_bias="0.875"
+                app:layout_constraintStart_toStartOf="@+id/personfigure"
+                app:layout_constraintTop_toTopOf="@+id/personfigure"
+                app:layout_constraintVertical_bias="0.785" />
+
+            <TextView
+                android:id="@+id/uarmans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.898"
+                app:layout_constraintStart_toStartOf="@+id/personfigure"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.239" />
+
+            <TextView
+                android:id="@+id/cans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+                app:layout_constraintEnd_toEndOf="@+id/personfigure"
+                app:layout_constraintHorizontal_bias="0.827"
+                app:layout_constraintStart_toStartOf="@+id/personfigure"
+                app:layout_constraintTop_toTopOf="@+id/personfigure"
+                app:layout_constraintVertical_bias="0.145" />
+
+            <TextView
+                android:id="@+id/hand1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+                app:layout_constraintEnd_toEndOf="@+id/personfigure"
+                app:layout_constraintHorizontal_bias="0.978"
+                app:layout_constraintStart_toStartOf="@+id/personfigure"
+                app:layout_constraintTop_toTopOf="@+id/personfigure"
+                app:layout_constraintVertical_bias="0.456" />
+
+            <TextView
+                android:id="@+id/pelans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.395"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/personfigure"
+                app:layout_constraintVertical_bias="0.481" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:text="Damage"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/gray"
+
+                android:textColorLink="@android:color/holo_red_dark"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/personfigure"
+                app:layout_constraintEnd_toEndOf="@+id/personfigure"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toStartOf="@+id/personfigure"
+                app:layout_constraintTop_toTopOf="@+id/personfigure"
+                app:layout_constraintVertical_bias="0.009" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
 </FrameLayout>

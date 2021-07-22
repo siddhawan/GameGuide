@@ -10,8 +10,8 @@
         android:label="BGMI Game Guide"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.GameGuide">
-
+        android:theme="@style/Theme.GameGuide"
+        >
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
@@ -21,12 +21,15 @@
                app to run.
         -->
         <activity
+            android:screenOrientation="portrait"
             android:name=".ui.gundetail.GunDetailActivity"
             android:label="Armoury"></activity>
         <activity
+            android:screenOrientation="portrait"
             android:name=".TabbedActivity"
             android:label="tab"></activity>
         <activity
+            android:screenOrientation="portrait"
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.GameGuide.NoActionBar">
@@ -37,6 +40,7 @@
             </intent-filter>
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name=".ui.DisplayMap"
             android:label="Map" />
     </application>

@@ -174,6 +174,7 @@ public class ComparisonWeapon extends Fragment {
                 textView7.setText(dataArray3.get(datafind.indexOf(dataArray0.get(position))));
                 textView11.setText(dataArray4.get(datafind.indexOf(dataArray0.get(position))));
                 textView9.setText(dataArray5.get(datafind.indexOf(dataArray0.get(position))));
+                ((TextView) parent.getChildAt(0)).setTextSize(20);
             }
 
             @Override
@@ -210,6 +211,7 @@ public class ComparisonWeapon extends Fragment {
                 textView8.setText(dataArray3.get(datafind.indexOf(dataArray0.get(position))));
                 textView12.setText(dataArray4.get(datafind.indexOf(dataArray0.get(position))));
                 textView10.setText(dataArray5.get(datafind.indexOf(dataArray0.get(position))));
+                ((TextView) parent.getChildAt(0)).setTextSize(20);
             }
 
             @Override

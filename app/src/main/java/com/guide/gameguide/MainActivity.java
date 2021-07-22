@@ -23,6 +23,7 @@ import com.guide.gameguide.ui.TabbedFragment;
 import com.guide.gameguide.ui.attachments.AttachmentsList;
 import com.guide.gameguide.ui.comparison.ComparisonWeapon;
 import com.guide.gameguide.ui.consumables.ConsumablesItems;
+import com.guide.gameguide.ui.dmgprofile.DamageProfile;
 import com.guide.gameguide.ui.gundetail.GunAdapter;
 import com.guide.gameguide.ui.gundetail.GunType;
 import com.guide.gameguide.ui.gundetail.Gun_Detail;
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                         fragment= new Maps();
                         break;
                     case R.id.bar_consumables:
-                        fragment= new ComparisonWeapon();
+                        fragment= new DamageProfile();
                         break;
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();

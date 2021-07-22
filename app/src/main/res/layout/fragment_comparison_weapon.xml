@@ -9,56 +9,60 @@
     tools:context=".ui.comparison.ComparisonWeapon"
     >
 
-    <Spinner
-
-        android:id="@+id/spinner2"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:dropDownHeight="3dp"
-        android:spinnerMode="dropdown"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:weightSum="2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.100"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Spinner
-        android:id="@+id/spinner3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:spinnerMode="dropdown"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias=".900"
-        app:layout_constraintStart_toStartOf="parent"
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="10dp"
 
-        app:layout_constraintTop_toTopOf="@+id/spinner2" />
+            android:spinnerMode="dropdown"
+            android:textSize="20sp" />
+
+        <Spinner
+
+            android:id="@+id/spinner2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="10dp"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
 
     <ScrollView
         android:id="@+id/scrollView3"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="100dp"
+        android:layout_height="0dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <LinearLayout
-           
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <LinearLayout
-                android:background="@android:color/transparent"
                 android:id="@+id/images"
                 android:layout_width="match_parent"
                 android:layout_height="138dp"
+                android:background="@android:color/transparent"
                 android:orientation="horizontal"
                 android:padding="10dp">
 
@@ -80,8 +84,8 @@
             </LinearLayout>
 
             <LinearLayout
-                style="@style/abcd"
                 android:id="@+id/ammo"
+                style="@style/abcd"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"

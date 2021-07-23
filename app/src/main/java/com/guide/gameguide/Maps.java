@@ -29,7 +29,7 @@ public class Maps extends Fragment {
     int images[] = {R.drawable.erangel , R.drawable.miramar , R.drawable.sanhok, R.drawable.vikendi,R.drawable.karakin};
 
 
-    String names[] = {"Erangle","Miramar","Sanhok","Vikendi","karakin"};
+    String names[] = {"Erangel","Miramar","Sanhok","Vikendi","karakin"};
     RecyclerView recyclerView;
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,

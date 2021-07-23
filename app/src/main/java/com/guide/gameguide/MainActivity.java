@@ -1,16 +1,11 @@
 package com.guide.gameguide;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
-import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 
 import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
@@ -20,26 +15,17 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import com.guide.gameguide.ui.TabbedFragment;
-import com.guide.gameguide.ui.attachments.AttachmentsList;
 import com.guide.gameguide.ui.comparison.ComparisonWeapon;
-import com.guide.gameguide.ui.consumables.ConsumablesItems;
 import com.guide.gameguide.ui.dmgprofile.DamageProfile;
 import com.guide.gameguide.ui.gundetail.GunAdapter;
-import com.guide.gameguide.ui.gundetail.GunType;
-import com.guide.gameguide.ui.gundetail.Gun_Detail;
-import com.guide.gameguide.ui.vehicles.VehiclesList;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import org.jetbrains.annotations.NotNull;
 
